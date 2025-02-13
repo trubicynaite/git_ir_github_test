@@ -45,6 +45,32 @@
                 nurodytas kiekis kitu projektu dalyviu patvirtintu ta pull requesta norint, kad darbas butu apjungtas.
             </p>
         </section>
+        <section>
+            <h2>Pull request eiliskumas</h2>
+            <p>
+                Apsiemiau daryti uzduoti. Kokie mano tolimesni veiksmai?
+            </p>
+            <ol>
+                <li>Susikurti nauja saka - git branch newBranch</li>
+                <li>Nueiti i susikurta saka - git checkout newBranch</li>
+                <li>
+                    Atlieki uzduoti, kuria apsiemei daryti. Su vienu ar keliais commit'ais.
+                    <ol>
+                        <li>git add .- pridedi pakitimus (taskas prideda visus pakeitimus)</li>
+                        <li>git commit -m "pavadinimas commito"</li>
+                    </ol>
+                </li>
+                <li>Nueiti i main/master saka - gut checkout main/master</li>
+                <li>Atnaujinti main/master saka - git pull</li>
+                <li>Grizti i savo uzd saka - git checkout newBranch</li>
+                <li>Sujungti savo saka su main/master saka ir isspresti galimai atsiradusius konfliktus - git merge main
+                </li>
+                <li>Nusiusti savo darbines sakos pakitimus i github - git push</li>
+                <li>Githube sukurti pull requesta</li>
+                <li>Kiti komandos nariai patvirtina arba atmeta pull requesta</li>
+                <li>Jei pull requestas sulauke pakankamai patvirtinimu - vykdyti merge'a</li>
+            </ol>
+        </section>
     </main>
     <footer></footer>
 </body>
